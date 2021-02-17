@@ -1,13 +1,40 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("https://img1.goodfon.com/wallpaper/nbig/c/96/universe-stars-beskonechnost.jpg");
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.character-card {
+  margin: 45px;
+  border: 1px solid white;
+  color: black;
+  height: 350px;
+  width: 250px;
+}
+
+.character-card img {
+  margin: 25px;
+  height: 200px;
+  border-radius: 200px;
+}
+
+.character-card p {
+  text-align: center;
+  background-color: white;
+  height: 70px;
+  border-radius: 25px;
+  font-size: 25px;
 }
