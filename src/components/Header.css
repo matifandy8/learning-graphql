@@ -1,3 +1,17 @@
-.header {
+.nav {
+  background-color: rgba(126, 255, 253, 0.494);
+  display: flex;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.nav ul li {
+  margin-left: 50%;
+}
+.nav ul li a {
   color: white;
+  text-decoration: none;
 }

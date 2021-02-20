@@ -18,22 +18,22 @@ code {
   flex-wrap: wrap;
 }
 .character-card {
-  margin: 45px;
-  border: 1px solid white;
-  color: black;
-  height: 350px;
-  width: 250px;
+  margin: 40px;
+  border: 1px solid rgba(126, 255, 253, 0.494);
+  color: white;
+  flex: 15%;
+  max-width: 50%;
 }
 
 .character-card img {
   margin: 25px;
-  height: 200px;
+  width: 80%;
   border-radius: 200px;
 }
 
 .character-card p {
   text-align: center;
-  background-color: white;
+  background-color: rgba(126, 255, 253, 0.494);
   height: 70px;
   border-radius: 25px;
   font-size: 25px;

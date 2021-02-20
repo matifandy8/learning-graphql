@@ -1,0 +1,18 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.login__container {
+  background: rgba(58, 63, 68, 0.5);
+  border-radius: 5px;
+  box-shadow: 0 1.5px 0 0 rgba(0, 0, 0, 0.1);
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+.login__title {
+  color: aliceblue;
+}
