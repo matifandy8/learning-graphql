@@ -1,10 +1,15 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Login.css";
 import { useForm } from "react-hook-form";
+import { useHistory } from "react-router-dom";
 import GoogleLogin from "react-google-login";
 import FacebookLogin from "react-facebook-login";
 
 function Login() {
+  const history = useHistory();
+
+  const [user, setUser] = useState();
+
   const responseFacebook = (response) => {
     console.log(response);
   };
@@ -15,7 +20,13 @@ function Login() {
   const { register, handleSubmit, errors } = useForm();
 
   const onSubmit = handleSubmit((data) => {
-    alert(JSON.stringify(data));
+    console.log(JSON.stringify(data));
+    // set the state of the user
+    setUser(data);
+    // store the user in localStorage
+    localStorage.setItem("user", JSON.stringify(data));
+    // redirect
+    history.push("/");
   });
 
   return (

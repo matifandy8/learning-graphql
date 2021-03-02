@@ -1,8 +1,13 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+  // logout the user
+  const handleLogout = () => {
+    localStorage.clear();
+  };
+
   return (
     <nav className="nav">
       <ul>
@@ -10,10 +15,14 @@ function Header() {
           <Link to="/">Home</Link>
         </li>
         <li>
-          <Link to="/login">Login</Link>
+          {localStorage.getItem("user") ? (
+            <Link onClick={handleLogout}>Logout</Link>
+          ) : (
+            <Link to="/login">Login</Link>
+          )}
         </li>
         <li>
-          <Link to="/about">about</Link>
+          <Link to="/about">About</Link>
         </li>
       </ul>
     </nav>
